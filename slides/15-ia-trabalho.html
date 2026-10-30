@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0B132B; color: #F8FAFC; font-family: 'Inter', sans-serif; overflow: hidden; }
+    .slide-container {
+      width: 1280px; min-height: 720px; background: #0B132B;
+      display: flex; flex-direction: column; padding: 60px;
+    }
+    header { border-left: 4px solid #00E5FF; padding-left: 20px; margin-bottom: 60px; }
+    h2 { font-size: 32px; font-weight: 700; }
+    .compare { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+    .box { background: #1C2541; padding: 40px; border-radius: 12px; display: flex; flex-direction: column; gap: 20px; }
+    .box-title { font-size: 24px; font-weight: 700; color: #3B82F6; }
+    .box-content { font-size: 18px; color: #94A3B8; line-height: 1.6; }
+    .highlight { color: #00E5FF; font-weight: 700; }
+    .conclusion { margin-top: 60px; text-align: center; font-size: 24px; font-weight: 700; color: #F8FAFC; border-top: 1px solid #334155; padding-top: 30px; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <header>
+      <h2>A IA vai substituir profissionais?</h2>
+    </header>
+    <div class="compare">
+      <div class="box">
+        <div class="box-title">O que a IA faz</div>
+        <div class="box-content">
+          <p>Automatização de <span class="highlight">tarefas repetitivas</span>, processamento de grandes volumes de dados e geração acelerada de rascunhos e código.</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-title">O que o Humano faz</div>
+        <div class="box-content">
+          <p>Julgamento ético, <span class="highlight">contextualização crítica</span>, criatividade estratégica e liderança de equipes complexas.</p>
+        </div>
+      </div>
+    </div>
+    <div class="conclusion">
+      A discussão mais útil não é apenas “quem será substituído?”, mas “como o trabalho vai mudar?”.
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0B132B; color: #F8FAFC; font-family: 'Inter', sans-serif; overflow: hidden; }
+    .slide-container {
+      width: 1280px; min-height: 720px; background: #0B132B;
+      display: flex; flex-direction: column; padding: 60px;
+    }
+    header { border-left: 4px solid #00E5FF; padding-left: 20px; margin-bottom: 40px; }
+    h2 { font-size: 32px; font-weight: 700; }
+    .content { flex: 1; display: grid; grid-template-columns: 1fr 450px; gap: 60px; align-items: center; }
+    .chart-container { height: 400px; background: #1C2541; padding: 30px; border-radius: 12px; }
+    .key-points { display: flex; flex-direction: column; gap: 30px; }
+    .point { border-left: 2px solid #3B82F6; padding-left: 20px; }
+    .point h3 { font-size: 24px; color: #00E5FF; margin-bottom: 10px; }
+    .point p { font-size: 16px; color: #94A3B8; line-height: 1.5; }
+    .source { font-size: 12px; color: #94A3B8; margin-top: 40px; text-align: right; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <header>
+      <h2>O mercado de trabalho está mudando</h2>
+    </header>
+    <div class="content">
+      <div class="chart-container">
+        <canvas id="wefChart"></canvas>
+      </div>
+      <div class="key-points">
+        <div class="point">
+          <h3>22% de Disrupção</h3>
+          <p>Dos empregos atuais sofrerão transformação estrutural até 2030.</p>
+        </div>
+        <div class="point">
+          <h3>+78 Milhões</h3>
+          <p>Saldo líquido projetado de novos postos de trabalho globais.</p>
+        </div>
+      </div>
+    </div>
+    <p class="source">Fonte: World Economic Forum, Future of Jobs Report 2025</p>
+  </div>
+  <script>
+    const ctx = document.getElementById('wefChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Novos Empregos', 'Empregos Deslocados'],
+        datasets: [{
+          data: [170, 92],
+          backgroundColor: ['#00E5FF', '#3B82F6'],
+          borderRadius: 8
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        animation: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { 
+            grid: { color: '#334155' }, 
+            ticks: { color: '#94A3B8', font: { size: 14 } },
+            title: { display: true, text: 'Milhões de Empregos (Projeção 2030)', color: '#94A3B8' }
+          },
+          y: { 
+            grid: { display: false }, 
+            ticks: { color: '#F8FAFC', font: { size: 16, weight: 'bold' } } 
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0B132B; color: #F8FAFC; font-family: 'Inter', sans-serif; overflow: hidden; }
+    .slide-container {
+      width: 1280px; min-height: 720px; background: #0B132B;
+      display: flex; flex-direction: column; padding: 60px;
+    }
+    header { border-left: 4px solid #00E5FF; padding-left: 20px; margin-bottom: 60px; }
+    h2 { font-size: 32px; font-weight: 700; }
+    .pipeline { flex: 1; display: flex; align-items: center; justify-content: space-between; padding: 0 40px; position: relative; }
+    .pipeline-line { position: absolute; height: 4px; background: #334155; width: calc(100% - 80px); z-index: 0; top: 50%; transform: translateY(-50%); }
+    .step {
+      width: 220px; background: #1C2541; border: 1px solid #334155; padding: 25px;
+      border-radius: 12px; z-index: 1; display: flex; flex-direction: column;
+      align-items: center; gap: 15px; transition: transform 0.3s;
+    }
+    .step i { font-size: 32px; color: #00E5FF; }
+    .step h3 { font-size: 18px; font-weight: 700; text-align: center; }
+    .step p { font-size: 14px; color: #94A3B8; text-align: center; }
+    .step.active { border-color: #00E5FF; box-shadow: 0 0 20px #00E5FF22; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <header>
+      <h2>Cloud, DevOps e Automação</h2>
+    </header>
+    <div class="pipeline">
+      <div class="pipeline-line"></div>
+      <div class="step">
+        <i class="fab fa-github"></i>
+        <h3>Controle & Git</h3>
+        <p>Gestão de código, colaboração e versionamento.</p>
+      </div>
+      <div class="step active">
+        <i class="fas fa-infinity"></i>
+        <h3>CI / CD</h3>
+        <p>Integração e entrega contínua para escala.</p>
+      </div>
+      <div class="step">
+        <i class="fab fa-docker"></i>
+        <h3>Containers</h3>
+        <p>Docker e Kubernetes para isolamento.</p>
+      </div>
+      <div class="step">
+        <i class="fas fa-cloud"></i>
+        <h3>Cloud</h3>
+        <p>Infraestrutura elástica e serviços em nuvem.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

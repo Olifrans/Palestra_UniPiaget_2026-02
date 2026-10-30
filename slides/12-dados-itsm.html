@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0B132B; color: #F8FAFC; font-family: 'Inter', sans-serif; overflow: hidden; }
+    .slide-container {
+      width: 1280px; min-height: 720px; background: #0B132B;
+      display: flex; flex-direction: column; padding: 60px;
+    }
+    header { border-left: 4px solid #00E5FF; padding-left: 20px; margin-bottom: 40px; }
+    h2 { font-size: 32px; font-weight: 700; }
+    .dashboard { flex: 1; display: grid; grid-template-columns: 2fr 1fr; gap: 30px; }
+    .main-viz { background: #1C2541; border: 1px solid #334155; border-radius: 12px; padding: 30px; display: flex; flex-direction: column; gap: 20px; }
+    .side-stats { display: flex; flex-direction: column; gap: 30px; }
+    .stat-card { background: #1C2541; padding: 25px; border-radius: 12px; border-left: 4px solid #3B82F6; }
+    .stat-card h3 { font-size: 16px; color: #94A3B8; margin-bottom: 10px; text-transform: uppercase; }
+    .stat-card .value { font-size: 28px; font-weight: 700; color: #00E5FF; }
+    .viz-container { flex: 1; background: #0B132B; border: 1px solid #334155; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #3B82F6; padding: 20px; gap: 15px; }
+    .topic { display: flex; align-items: center; gap: 10px; font-weight: 700; color: #F8FAFC; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <header>
+      <h2>Dados e Gestão de Serviços</h2>
+    </header>
+    <div class="dashboard">
+      <div class="main-viz">
+        <div class="topic"><i class="fas fa-chart-line"></i> Tomada de Decisão</div>
+        <p style="color: #94A3B8;">Business Intelligence (Power BI) transformando dados brutos em visibilidade estratégica.</p>
+        <div class="viz-container">
+          <div style="width: 100%; height: 20px; background: #334155; border-radius: 10px; position: relative;">
+            <div style="width: 75%; height: 100%; background: #00E5FF; border-radius: 10px;"></div>
+          </div>
+          <div style="width: 100%; height: 20px; background: #334155; border-radius: 10px; position: relative;">
+            <div style="width: 45%; height: 100%; background: #3B82F6; border-radius: 10px;"></div>
+          </div>
+          <p style="font-size: 14px; color: #94A3B8; margin-top: 10px;">Visão Consolidada de KPIs</p>
+        </div>
+      </div>
+      <div class="side-stats">
+        <div class="stat-card">
+          <h3>ServiceNow</h3>
+          <div class="value">ITSM & CSM</div>
+          <p style="font-size: 14px; color: #94A3B8; margin-top: 5px;">Gestão de processos e automação.</p>
+        </div>
+        <div class="stat-card">
+          <h3>Databases</h3>
+          <div class="value">SQL & NoSQL</div>
+          <p style="font-size: 14px; color: #94A3B8; margin-top: 5px;">Estrutura robusta para escala.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

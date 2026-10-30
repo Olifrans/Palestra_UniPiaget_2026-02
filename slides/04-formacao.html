@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0B132B;
+      color: #F8FAFC;
+      font-family: 'Inter', sans-serif;
+      overflow: hidden;
+    }
+
+    .slide-container {
+      width: 1280px;
+      min-height: 720px;
+      background: #0B132B;
+      display: flex;
+      flex-direction: column;
+      padding: 60px;
+    }
+
+    header {
+      border-left: 4px solid #00E5FF;
+      padding-left: 20px;
+      margin-bottom: 80px;
+    }
+
+    h2 {
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .timeline {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding: 0 40px;
+    }
+
+    .line {
+      position: absolute;
+      height: 2px;
+      background: #334155;
+      width: calc(100% - 80px);
+      z-index: 0;
+    }
+
+    .milestones {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      z-index: 1;
+    }
+
+    .milestone {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 220px;
+    }
+
+    /* .dot {
+      width: 20px;
+      height: 20px;
+      background: #00E5FF;
+      border-radius: 50%;
+      margin: 15px 0;
+      border: 4px solid #0B132B;
+      box-shadow: 0 0 10px #00E5FF;
+    } */
+
+
+    .dot {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: #0d6efd;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      margin: 0 auto 12px;
+    }
+
+
+    .year {
+      font-size: 24px;
+      font-weight: 700;
+      color: #3B82F6;
+      margin-bottom: 5px;
+    }
+
+    .course {
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 10px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+    }
+
+    .institution {
+      font-size: 14px;
+      color: #94A3B8;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="slide-container">
+    <header>
+      <h2>Uma formação em movimento</h2>
+    </header>
+    <div class="timeline">
+      <div class="line"></div>
+
+
+      <div class="milestones">
+
+        <!-- <div class="milestone">
+          <div class="dot"><i class="fas fa-network-wired"></i></div>
+          <div class="course">Análise e Desenvolvimento de Sistemas</div>
+          <div class="institution">Estacio de Sá</div>
+        </div> -->
+
+        <div class="milestone">
+          <div class="dot"><i class="fas fa-network-wired"></i></div>
+          <div class="course">Redes de Computadores</div>
+          <div class="institution">UNIP</div>
+        </div>
+
+
+        <div class="milestone">
+          <div class="dot"><i class="fas fa-laptop-code"></i></div>
+          <div class="course">Ciência da Computação</div>
+          <div class="institution">FAM</div>
+        </div>
+
+        <div class="milestone">
+          <div class="dot"><i class="fas fa-database"></i></div>
+          <div class="course">Tecnologias e Sistemas de Informação</div>
+          <div class="institution">UFABC</div>
+        </div>
+
+        <div class="milestone">
+          <div class="dot"><i class="fas fa-chart-line"></i></div>
+          <div class="course">Ciência de Dados</div>
+          <div class="institution">USP</div>
+        </div>
+      </div>
+
+
+
+    </div>
+</body>
+
+</html>

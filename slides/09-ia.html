@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0B132B; color: #F8FAFC; font-family: 'Inter', sans-serif; overflow: hidden; }
+    .slide-container {
+      width: 1280px; min-height: 720px; background: #0B132B;
+      display: flex; flex-direction: column; padding: 60px;
+    }
+    header { border-left: 4px solid #00E5FF; padding-left: 20px; margin-bottom: 40px; }
+    h2 { font-size: 32px; font-weight: 700; }
+    .cards { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+    .card { background: #1C2541; padding: 40px; border-radius: 12px; border: 1px solid #334155; }
+    .card h3 { font-size: 24px; font-weight: 700; margin-bottom: 20px; color: #00E5FF; display: flex; align-items: center; gap: 15px; }
+    .card ul { list-style: none; display: flex; flex-direction: column; gap: 15px; }
+    .card li { display: flex; align-items: flex-start; gap: 12px; font-size: 18px; color: #94A3B8; line-height: 1.4; }
+    .card li::before { content: "→"; color: #3B82F6; font-weight: bold; }
+    .source { font-size: 12px; color: #94A3B8; margin-top: 20px; text-align: right; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <header>
+      <h2>Inteligência Artificial: Ferramenta e Responsabilidade</h2>
+    </header>
+    <div class="cards">
+      <div class="card">
+        <h3><i class="fas fa-robot"></i> IA Generativa</h3>
+        <ul>
+          <li>ChatGPT, Gemini e Copilot: além do chat.</li>
+          <li>Agentes inteligentes integrados a processos.</li>
+          <li>Aumento radical de produtividade individual.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-brain"></i> Impacto Humano</h3>
+        <ul>
+          <li>Mudança nos critérios de avaliação educacional.</li>
+          <li>Foco em demonstrar <span>o que você sabe fazer</span> com a IA.</li>
+          <li>Responsabilidade ética e transparência de dados.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="source">Ref: Gamby et al., EDUCAUSE Review (2026)</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0B132B; color: #F8FAFC; font-family: 'Inter', sans-serif; overflow: hidden; }
+    .slide-container {
+      width: 1280px; min-height: 720px; background: #0B132B;
+      display: flex; flex-direction: column; padding: 60px;
+    }
+    header { border-left: 4px solid #00E5FF; padding-left: 20px; margin-bottom: 50px; }
+    h2 { font-size: 32px; font-weight: 700; }
+    .layout { flex: 1; display: grid; grid-template-columns: 500px 1fr; gap: 60px; }
+    .image-box {
+      background: url('../assets/02-learning-lab.jpg') no-repeat center center;
+      background-size: cover; border-radius: 16px; border: 1px solid #334155;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    .text-zone { display: flex; flex-direction: column; gap: 40px; justify-content: center; }
+    .exp-item { display: flex; gap: 20px; }
+    .exp-item i { font-size: 28px; color: #00E5FF; margin-top: 4px; }
+    .exp-content h3 { font-size: 24px; font-weight: 700; margin-bottom: 10px; color: #F8FAFC; }
+    .exp-content p { font-size: 18px; color: #94A3B8; line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <header>
+      <h2>Conhecimento que se compartilha</h2>
+    </header>
+    <div class="layout">
+      <div class="image-box"></div>
+      <div class="text-zone">
+        <div class="exp-item">
+          <i class="fas fa-university"></i>
+          <div class="exp-content">
+            <h3>Professor do Ensino Superior</h3>
+            <p>Atuação docente no ensino superior, compartilhando conhecimento técnico e prático em tecnologia.</p>
+          </div>
+        </div>
+        <div class="exp-item">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <div class="exp-content">
+            <h3>Instrutor de Formação Profissional</h3>
+            <p>Experiência no ensino técnico e profissional, contribuindo para a formação de novos profissionais no SENAI-SP.</p>
+          </div>
+        </div>
+        <div class="exp-item">
+          <i class="fas fa-users"></i>
+          <div class="exp-content">
+            <h3>Formação de novos talentos</h3>
+            <p>O compromisso de orientar carreiras e transformar o potencial acadêmico em prontidão para o mercado.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

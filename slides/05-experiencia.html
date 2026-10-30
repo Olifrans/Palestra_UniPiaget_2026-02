@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0B132B; color: #F8FAFC; font-family: 'Inter', sans-serif; overflow: hidden; }
+    .slide-container {
+      width: 1280px; min-height: 720px; background: #0B132B;
+      display: flex; flex-direction: column; padding: 60px;
+    }
+    header { border-left: 4px solid #00E5FF; padding-left: 20px; margin-bottom: 40px; }
+    h2 { font-size: 32px; font-weight: 700; }
+    .grid { flex: 1; display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr); gap: 30px; }
+    .card { background: #1C2541; padding: 30px; border-radius: 8px; border-top: 3px solid #3B82F6; display: flex; flex-direction: column; gap: 15px; }
+    .card h3 { font-size: 22px; color: #00E5FF; font-weight: 700; display: flex; align-items: center; gap: 12px; }
+    .card p { font-size: 17px; color: #94A3B8; line-height: 1.5; }
+    .tag-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; }
+    .tag { font-size: 12px; background: #0B132B; color: #F8FAFC; padding: 4px 10px; border-radius: 4px; border: 1px solid #334155; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <header>
+      <h2>Da tecnologia à experiência profissional</h2>
+    </header>
+    <div class="grid">
+      <div class="card">
+        <h3><i class="fas fa-code"></i> Desenvolvimento</h3>
+        <p>Criação e manutenção de sistemas robustos utilizando linguagens de alto nível e padrões de projeto.</p>
+        <div class="tag-list">
+          <span class="tag">C#</span><span class="tag">.NET</span><span class="tag">Java</span><span class="tag">Python</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-project-diagram"></i> Engenharia de Software</h3>
+        <p>Desenho de arquitetura de soluções, integração de APIs e garantia de escalabilidade das aplicações.</p>
+        <div class="tag-list">
+          <span class="tag">REST</span><span class="tag">Microsserviços</span><span class="tag">SOLID</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-database"></i> Dados</h3>
+        <p>Gestão de bancos de dados, estruturação de queries complexas e garantia da integridade da informação.</p>
+        <div class="tag-list">
+          <span class="tag">SQL Server</span><span class="tag">PostgreSQL</span><span class="tag">MongoDB</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-rocket"></i> Soluções</h3>
+        <p>Entrega de valor através de produtos digitais que resolvem problemas reais de negócio.</p>
+        <div class="tag-list">
+          <span class="tag">Ágil</span><span class="tag">Scrum</span><span class="tag">Produtividade</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

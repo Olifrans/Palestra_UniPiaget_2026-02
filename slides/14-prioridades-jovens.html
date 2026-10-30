@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0B132B; color: #F8FAFC; font-family: 'Inter', sans-serif; overflow: hidden; }
+    .slide-container {
+      width: 1280px; min-height: 720px; background: url('../assets/03-youth-priorities.jpg') no-repeat center center;
+      background-size: cover; display: flex; flex-direction: column; padding: 60px; position: relative;
+    }
+    .overlay { position: absolute; inset: 0; background: linear-gradient(90deg, #0B132BEE 30%, #0B132B44 100%); }
+    .content { position: relative; z-index: 1; flex: 1; display: flex; flex-direction: column; justify-content: center; max-width: 700px; }
+    header { border-left: 4px solid #00E5FF; padding-left: 20px; margin-bottom: 40px; }
+    h2 { font-size: 32px; font-weight: 700; line-height: 1.2; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
+    .card { background: #1C2541CC; padding: 25px; border-radius: 12px; border: 1px solid #334155; backdrop-filter: blur(4px); }
+    .card h3 { font-size: 20px; color: #00E5FF; margin-bottom: 10px; display: flex; align-items: center; gap: 12px; }
+    .card p { font-size: 16px; color: #E2E8F0; line-height: 1.5; }
+    .source { font-size: 12px; color: #94A3B8; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="overlay"></div>
+    <div class="content">
+      <header>
+        <h2>O que a nova geração prioriza no trabalho?</h2>
+      </header>
+      <div class="grid">
+        <div class="card">
+          <h3><i class="fas fa-shield-alt"></i> Estabilidade e Segurança</h3>
+          <p>Diferente do mito do "job hopping" desenfreado, a busca por bases sólidas e segurança financeira é prioridade.</p>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-heartbeat"></i> Equilíbrio e Bem-estar</h3>
+          <p>O sucesso é medido pela sustentabilidade da carga de trabalho e pela saúde mental, não apenas por cargos.</p>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-seedling"></i> Crescimento com Propósito</h3>
+          <p>Preferência por progresso gradual e aprendizado contínuo que faça sentido para a vida pessoal.</p>
+        </div>
+      </div>
+      <p class="source">Ref: Deloitte Global Gen Z and Millennial Survey 2026</p>
+    </div>
+  </div>
+</body>
+</html>

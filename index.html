@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B132B">
+  <title>Da formação à Transformação Profissional</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="slides.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <main class="presentation" aria-label="Apresentação">
+    <header class="toolbar">
+      <div class="brand"><span class="brand-mark"></span><span>DA FORMAÇÃO À TRANSFORMAÇÃO</span></div>
+      <div class="toolbar-actions">
+        <button id="notesButton" class="tool-button" type="button" aria-pressed="false" title="Mostrar notas (N)">Notas</button>
+        <button id="overviewButton" class="tool-button" type="button" aria-expanded="false" title="Ver todos os slides (O)">Visão geral</button>
+        <button id="fullscreenButton" class="tool-button icon-button" type="button" title="Tela cheia (F)" aria-label="Tela cheia">⛶</button>
+      </div>
+    </header>
+
+    <section class="stage-wrap">
+      <div class="stage" id="stage">
+        <iframe id="slideFrame" title="Slide atual" src="slides/01-capa.html"></iframe>
+        <aside id="notesPanel" class="notes-panel" hidden>
+          <div class="notes-heading">Notas do apresentador</div>
+          <p id="notesText"></p>
+        </aside>
+      </div>
+    </section>
+
+    <footer class="controls">
+      <button id="previousButton" class="nav-button" type="button" aria-label="Slide anterior">← <span>Anterior</span></button>
+      <div class="progress-area">
+        <div class="slide-meta"><span id="slideTitle">Da formação à transformação profissional</span><span id="slideCounter">01 / 20</span></div>
+        <button id="progressTrack" class="progress-track" type="button" aria-label="Progresso da apresentação">
+          <span id="progressBar" class="progress-bar"></span>
+        </button>
+      </div>
+      <button id="nextButton" class="nav-button primary" type="button" aria-label="Próximo slide"><span>Próximo</span> →</button>
+    </footer>
+
+    <section id="overview" class="overview" hidden aria-label="Selecionar slide">
+      <div class="overview-header"><h2>Visão geral</h2><button id="closeOverview" type="button" class="close-button" aria-label="Fechar">×</button></div>
+      <div id="slideGrid" class="slide-grid"></div>
+    </section>
+  </main>
+</body>
+</html>

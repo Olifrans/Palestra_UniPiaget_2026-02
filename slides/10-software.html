@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0B132B; color: #F8FAFC; font-family: 'Inter', sans-serif; overflow: hidden; }
+    .slide-container {
+      width: 1280px; min-height: 720px; background: #0B132B;
+      display: flex; flex-direction: column; padding: 60px;
+    }
+    header { border-left: 4px solid #00E5FF; padding-left: 20px; margin-bottom: 50px; }
+    h2 { font-size: 32px; font-weight: 700; }
+    .grid { flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+    .block { background: #1C2541; padding: 30px; border-radius: 8px; text-align: center; border-bottom: 4px solid #3B82F6; }
+    .block i { font-size: 40px; color: #00E5FF; margin-bottom: 20px; }
+    .block h3 { font-size: 22px; margin-bottom: 15px; }
+    .block p { font-size: 16px; color: #94A3B8; line-height: 1.5; }
+    .message { margin-top: 60px; padding: 25px; background: #0F172A; border-radius: 8px; border: 1px dashed #334155; text-align: center; font-size: 20px; font-style: italic; color: #00E5FF; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <header>
+      <h2>Desenvolvimento de Software</h2>
+    </header>
+    <div class="grid">
+      <div class="block">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Stacks</h3>
+        <p>Domínio de Ecossistemas: C#, .NET e Java para aplicações escaláveis.</p>
+      </div>
+      <div class="block">
+        <i class="fas fa-plug"></i>
+        <h3>Integração</h3>
+        <p>APIs modernas (REST), Microsserviços e comunicação assíncrona.</p>
+      </div>
+      <div class="block">
+        <i class="fas fa-lightbulb"></i>
+        <h3>Resolução</h3>
+        <p>O código como meio: transformando problemas reais em soluções digitais.</p>
+      </div>
+    </div>
+    <div class="message">
+      "Uma solução tecnológica é o resultado de entender o problema antes de escrever a primeira linha de código."
+    </div>
+  </div>
+</body>
+</html>

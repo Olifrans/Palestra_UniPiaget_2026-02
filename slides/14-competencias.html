@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0B132B; color: #F8FAFC; font-family: 'Inter', sans-serif; overflow: hidden; }
+    .slide-container {
+      width: 1280px; min-height: 720px; background: #0B132B;
+      display: flex; flex-direction: column; padding: 60px;
+    }
+    header { border-left: 4px solid #00E5FF; padding-left: 20px; margin-bottom: 60px; }
+    h2 { font-size: 32px; font-weight: 700; }
+    .columns { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+    .col { display: flex; flex-direction: column; gap: 30px; }
+    .skill-card { background: #1C2541; padding: 30px; border-radius: 12px; border: 1px solid #334155; }
+    .col-header { font-size: 24px; font-weight: 700; color: #00E5FF; margin-bottom: 20px; display: flex; align-items: center; gap: 15px; }
+    .skill-list { list-style: none; display: flex; flex-direction: column; gap: 15px; }
+    .skill-list li { display: flex; align-items: center; gap: 15px; font-size: 18px; color: #94A3B8; }
+    .skill-list i { color: #3B82F6; width: 25px; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <header>
+      <h2>Hard Skills + Soft Skills</h2>
+    </header>
+    <div class="columns">
+      <div class="col">
+        <div class="col-header"><i class="fas fa-tools"></i> Hard Skills (Técnicas)</div>
+        <div class="skill-card">
+          <ul class="skill-list">
+            <li><i class="fas fa-check"></i> Inteligência Artificial & Dados</li>
+            <li><i class="fas fa-check"></i> Programação e Cloud Computing</li>
+            <li><i class="fas fa-check"></i> Cibersegurança & Redes</li>
+            <li><i class="fas fa-check"></i> Gestão de Serviços (ITSM)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col">
+        <div class="col-header"><i class="fas fa-user-friends"></i> Soft Skills (Humanas)</div>
+        <div class="skill-card">
+          <ul class="skill-list">
+            <li><i class="fas fa-bolt"></i> Pensamento Analítico e Criativo</li>
+            <li><i class="fas fa-sync"></i> Resiliência e Agilidade</li>
+            <li><i class="fas fa-comments"></i> Comunicação e Liderança</li>
+            <li><i class="fas fa-search"></i> Curiosidade e Lifelong Learning</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p style="font-size: 12px; color: #94A3B8; text-align: right; padding-top: 16px;">Referência: World Economic Forum, Future of Jobs Report 2025</p>
+  </div>
+</body>
+</html>

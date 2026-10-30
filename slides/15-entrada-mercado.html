@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0B132B; color: #F8FAFC; font-family: 'Inter', sans-serif; overflow: hidden; }
+    .slide-container {
+      width: 1280px; min-height: 720px; background: url('../assets/04-first-job.jpg') no-repeat center center;
+      background-size: cover; display: flex; flex-direction: column; padding: 60px; position: relative;
+    }
+    .overlay { position: absolute; inset: 0; background: linear-gradient(0deg, #0B132BEE 20%, transparent 100%); }
+    .content { position: relative; z-index: 1; margin-top: auto; max-width: 900px; }
+    header { border-left: 4px solid #00E5FF; padding-left: 20px; margin-bottom: 30px; }
+    h2 { font-size: 32px; font-weight: 700; }
+    .stats { display: flex; gap: 40px; margin-top: 20px; }
+    .stat-box { background: #1C2541DD; padding: 30px; border-radius: 12px; border-top: 4px solid #3B82F6; flex: 1; }
+    .stat-box h3 { font-size: 18px; color: #00E5FF; margin-bottom: 10px; }
+    .stat-box p { font-size: 15px; color: #94A3B8; line-height: 1.4; }
+    .source { font-size: 12px; color: #94A3B8; margin-top: 30px; text-align: right; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="overlay"></div>
+    <div class="content">
+      <header>
+        <h2>A ansiedade do primeiro emprego</h2>
+      </header>
+      <div class="stats">
+        <div class="stat-box">
+          <h3>Impacto da IA</h3>
+          <p>61% dos jovens temem que a IA dificulte a entrada no mercado para iniciantes ao automatizar tarefas de base.</p>
+        </div>
+        <div class="stat-box">
+          <h3>Lacuna Prática</h3>
+          <p>Muitos universitários sentem que o currículo acadêmico oferece pouca experiência real para o dia a dia corporativo.</p>
+        </div>
+        <div class="stat-box">
+          <h3>Sustentabilidade</h3>
+          <p>A preocupação com o custo de vida influencia diretamente na escolha da primeira oportunidade e local de trabalho.</p>
+        </div>
+      </div>
+      <p class="source">Fonte: Pesquisa Deloitte 2025/2026 | Dados Globais</p>
+    </div>
+  </div>
+</body>
+</html>
